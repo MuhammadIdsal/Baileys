@@ -4,15 +4,15 @@ import { makeCommunitiesSocket } from './communities'
 
 // export the last socket layer
 const makeWASocket = (config: UserFacingSocketConfig) => {
-	const newConfig = {
-	console.log('\x1b[36m%s\x1b[0m', '=========================================');
-  console.log('\x1b[32m%s\x1b[0m', '   🔥 BAILEYS CUSTOM BY IDSAL 🔥     ');
-  console.log('\x1b[33m%s\x1b[0m', '      STATUS: BOT SEDANG DIJALANKAN      ');
-  console.log('\x1b[36m%s\x1b[0m', '=========================================');
-	
-	}
+    
+    // --- WATERMARK TERMINAL LU ---
+    console.log('\x1b[36m%s\x1b[0m', '=========================================');
+    console.log('\x1b[32m%s\x1b[0m', '   🔥 BAILEYS CUSTOM BY IDSAL 🔥     ');
+    console.log('\x1b[33m%s\x1b[0m', '      STATUS: BOT SEDANG DIJALANKAN      ');
+    console.log('\x1b[36m%s\x1b[0m', '=========================================');
+    // -----------------------------
 
-	return makeCommunitiesSocket(newConfig)
+    return makeCommunitiesSocket(config)
 }
 
 export default makeWASocket
