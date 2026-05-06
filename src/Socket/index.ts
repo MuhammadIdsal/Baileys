@@ -12,7 +12,13 @@ const makeWASocket = (config: UserFacingSocketConfig) => {
     console.log('\x1b[36m%s\x1b[0m', '=========================================');
     // -----------------------------
 
-    return makeCommunitiesSocket(config)
+    // Ini wajib ada biar settingan bot lu nggak error
+    const newConfig = {
+        ...DEFAULT_CONNECTION_CONFIG,
+        ...config
+    }
+
+    return makeCommunitiesSocket(newConfig)
 }
 
 export default makeWASocket
