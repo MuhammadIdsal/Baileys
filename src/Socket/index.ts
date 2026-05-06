@@ -1,4 +1,4 @@
-import { DEFAULT_CONNECTION_CONFIG } from '../Defaults'
+exitexitimport { DEFAULT_CONNECTION_CONFIG } from '../Defaults'
 import type { UserFacingSocketConfig } from '../Types'
 import { makeCommunitiesSocket } from './communities'
 
